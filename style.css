@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    padding: 2rem;
+    width: 100%;
+    background-color:rgba(236, 240, 252, 1);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2rem;
+    height: 100vh;
+}
+
+/* ----------------------------Main CSS---------------------- */
+.primary-btn{
+    background-color: #3f51b5;
+    padding: 8px 16px;
+    margin: 1rem;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 200ms linear;
+    text-transform: uppercase;
+}
+.primary-btn:hover{
+    background-color: #2e3b85;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+}
+
+/* ---------------------------------Snackbar skelton--------------------- */
+.snackbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    min-width: 28rem;
+    line-height: 1.25rem;
+    border-radius: 6px;
+    box-shadow: 4px 8px 1rem #747679;
+}
+
+.snackbar-stacked{
+    display: flex;
+    flex-direction: column;
+}
+.snackbar-stacked>.snackbar-action{
+    margin-top: 2rem;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.snackbar-btn{
+    border-style: none;
+    font-weight: 700;
+    height: 1.5rem;
+    padding: 0px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #bb86fc;
+    text-transform: uppercase;
+    transition: all 50ms linear;
+}
+.snackbar-btn:hover{
+    background-color: #493861;
+    color: #bb86fc;
+}
+.snackbar-btn:active{
+    background-color: #382b4b;
+    color: #bb86fc;
+}
+
+.snackbar-icon-btn{
+    border-style: none;
+    font-weight: 700;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.snackbar-icon-btn:hover{
+    background-color: hsla(0,0%,100%,.1);
+    
+}
+.snackbar-icon-btn:active{
+    background-color: hsla(0,0%,100%,.3);
+}
+
+.demo-snackbar{
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    bottom: 32px;
+}
+.demo-snackbar.show{
+    visibility: visible;
+    animation: fadein 0.5s;
+}
+
+.leading{
+    left: 1rem;
+}
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+
+/* ---------------------------------Snackbar skin--------------------- */
+
+.snackbar{
+    background-color: #333;
+    color: white;
+}
