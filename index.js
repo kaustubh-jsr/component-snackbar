@@ -16,10 +16,10 @@ toggleLeadingBtn.addEventListener("click",()=>{
 
 
 closeBaselineSnackbar.addEventListener("click",()=>{
-    baselineSnackbar.classList.toggle("show");
+    baselineSnackbar.classList.remove("show");
 }
 )
 closeLeadingSnackbar.addEventListener("click",()=>{
-    leadingSnackbar.classList.toggle("show");
+    leadingSnackbar.classList.remove("show");
 }
 )
